@@ -15,13 +15,24 @@ env:
   # https://github.com/docker-library/bashbrew/issues/10
   GIT_LFS_SKIP_SMUDGE: 1
 
+# limit to one run at a time per pull request
+# no cancel-in-progress so that the running diff comment can finish before the next since the old diff could be helpful for review
+concurrency:
+  # this should use "github.ref", but:
+  # "For pull requests events except pull_request_target, it is refs/pull/<pr_number>/merge. pull_request_target events have the ref from the base branch." 🙃
+  # https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context
+  #group: ${{ github.workflow }}-${{ github.ref }}
+  # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#pull_request_target
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
 jobs:
 
   gather:
     name: Gather Metadata
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # ideally this would be "github.event.pull_request.merge_commit_sha" but according to https://docs.github.com/en/free-pro-team@latest/rest/reference/pulls#get-a-pull-request if "mergeable" is null (meaning there's a background job in-progress to check mergeability), that value is undefined...
           ref: ${{ github.event.pull_request.head.sha }}
@@ -80,7 +91,7 @@ jobs:
     if: fromJSON(needs.gather.outputs.images).imagesAndExternalPinsCount > 0
     steps:
       - name: Apply Labels
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         env:
           IMAGES: ${{ needs.gather.outputs.images }}
         with:
@@ -108,7 +119,7 @@ jobs:
     needs: gather
     if: fromJSON(needs.gather.outputs.images).imagesAndExternalPinsCount > 0
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           # again, this would ideally be "github.event.pull_request.merge_commit_sha" but we might not have that yet when this runs, so we compromise by checkout out the latest code from the target branch (so we get the latest "diff-pr.sh" script to run)
           ref: ${{ github.event.pull_request.base.ref }}
@@ -138,7 +149,7 @@ jobs:
         run: |
           docker run --rm --read-only --tmpfs /tmp oisupport/bashbrew:diff-pr ./diff-pr.sh "$GITHUB_PR_NUMBER" | tee "$GITHUB_WORKSPACE/oi-pr.diff"
       - name: Comment
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

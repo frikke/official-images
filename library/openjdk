@@ -1,109 +1,151 @@
-# this file is generated via https://github.com/docker-library/openjdk/blob/3345e54d319e7247c3adb700ded0209f26e8171c/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/openjdk/blob/3d37b6b3441beba81c9bc799912b72ae1dc6a2f1/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/openjdk.git
 
-Tags: 21-ea-13-jdk-oraclelinux8, 21-ea-13-oraclelinux8, 21-ea-jdk-oraclelinux8, 21-ea-oraclelinux8, 21-jdk-oraclelinux8, 21-oraclelinux8, 21-ea-13-jdk-oracle, 21-ea-13-oracle, 21-ea-jdk-oracle, 21-ea-oracle, 21-jdk-oracle, 21-oracle
-SharedTags: 21-ea-13-jdk, 21-ea-13, 21-ea-jdk, 21-ea, 21-jdk, 21
+Tags: 25-ea-9-jdk-oraclelinux9, 25-ea-9-oraclelinux9, 25-ea-jdk-oraclelinux9, 25-ea-oraclelinux9, 25-jdk-oraclelinux9, 25-oraclelinux9, 25-ea-9-jdk-oracle, 25-ea-9-oracle, 25-ea-jdk-oracle, 25-ea-oracle, 25-jdk-oracle, 25-oracle
+SharedTags: 25-ea-9-jdk, 25-ea-9, 25-ea-jdk, 25-ea, 25-jdk, 25
 Architectures: amd64, arm64v8
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/oraclelinux8
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/oraclelinux9
 
-Tags: 21-ea-13-jdk-oraclelinux7, 21-ea-13-oraclelinux7, 21-ea-jdk-oraclelinux7, 21-ea-oraclelinux7, 21-jdk-oraclelinux7, 21-oraclelinux7
+Tags: 25-ea-9-jdk-oraclelinux8, 25-ea-9-oraclelinux8, 25-ea-jdk-oraclelinux8, 25-ea-oraclelinux8, 25-jdk-oraclelinux8, 25-oraclelinux8
 Architectures: amd64, arm64v8
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/oraclelinux7
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/oraclelinux8
 
-Tags: 21-ea-13-jdk-bullseye, 21-ea-13-bullseye, 21-ea-jdk-bullseye, 21-ea-bullseye, 21-jdk-bullseye, 21-bullseye
+Tags: 25-ea-9-jdk-bookworm, 25-ea-9-bookworm, 25-ea-jdk-bookworm, 25-ea-bookworm, 25-jdk-bookworm, 25-bookworm
 Architectures: amd64, arm64v8
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/bullseye
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/bookworm
 
-Tags: 21-ea-13-jdk-slim-bullseye, 21-ea-13-slim-bullseye, 21-ea-jdk-slim-bullseye, 21-ea-slim-bullseye, 21-jdk-slim-bullseye, 21-slim-bullseye, 21-ea-13-jdk-slim, 21-ea-13-slim, 21-ea-jdk-slim, 21-ea-slim, 21-jdk-slim, 21-slim
+Tags: 25-ea-9-jdk-slim-bookworm, 25-ea-9-slim-bookworm, 25-ea-jdk-slim-bookworm, 25-ea-slim-bookworm, 25-jdk-slim-bookworm, 25-slim-bookworm, 25-ea-9-jdk-slim, 25-ea-9-slim, 25-ea-jdk-slim, 25-ea-slim, 25-jdk-slim, 25-slim
 Architectures: amd64, arm64v8
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/slim-bullseye
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/slim-bookworm
 
-Tags: 21-ea-13-jdk-buster, 21-ea-13-buster, 21-ea-jdk-buster, 21-ea-buster, 21-jdk-buster, 21-buster
+Tags: 25-ea-9-jdk-bullseye, 25-ea-9-bullseye, 25-ea-jdk-bullseye, 25-ea-bullseye, 25-jdk-bullseye, 25-bullseye
 Architectures: amd64, arm64v8
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/buster
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/bullseye
 
-Tags: 21-ea-13-jdk-slim-buster, 21-ea-13-slim-buster, 21-ea-jdk-slim-buster, 21-ea-slim-buster, 21-jdk-slim-buster, 21-slim-buster
+Tags: 25-ea-9-jdk-slim-bullseye, 25-ea-9-slim-bullseye, 25-ea-jdk-slim-bullseye, 25-ea-slim-bullseye, 25-jdk-slim-bullseye, 25-slim-bullseye
 Architectures: amd64, arm64v8
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/slim-buster
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/slim-bullseye
 
-Tags: 21-ea-13-jdk-windowsservercore-ltsc2022, 21-ea-13-windowsservercore-ltsc2022, 21-ea-jdk-windowsservercore-ltsc2022, 21-ea-windowsservercore-ltsc2022, 21-jdk-windowsservercore-ltsc2022, 21-windowsservercore-ltsc2022
-SharedTags: 21-ea-13-jdk-windowsservercore, 21-ea-13-windowsservercore, 21-ea-jdk-windowsservercore, 21-ea-windowsservercore, 21-jdk-windowsservercore, 21-windowsservercore, 21-ea-13-jdk, 21-ea-13, 21-ea-jdk, 21-ea, 21-jdk, 21
+Tags: 25-ea-9-jdk-windowsservercore-ltsc2025, 25-ea-9-windowsservercore-ltsc2025, 25-ea-jdk-windowsservercore-ltsc2025, 25-ea-windowsservercore-ltsc2025, 25-jdk-windowsservercore-ltsc2025, 25-windowsservercore-ltsc2025
+SharedTags: 25-ea-9-jdk-windowsservercore, 25-ea-9-windowsservercore, 25-ea-jdk-windowsservercore, 25-ea-windowsservercore, 25-jdk-windowsservercore, 25-windowsservercore, 25-ea-9-jdk, 25-ea-9, 25-ea-jdk, 25-ea, 25-jdk, 25
 Architectures: windows-amd64
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/windows/windowsservercore-ltsc2022
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/windows/windowsservercore-ltsc2025
+Constraints: windowsservercore-ltsc2025
+
+Tags: 25-ea-9-jdk-windowsservercore-ltsc2022, 25-ea-9-windowsservercore-ltsc2022, 25-ea-jdk-windowsservercore-ltsc2022, 25-ea-windowsservercore-ltsc2022, 25-jdk-windowsservercore-ltsc2022, 25-windowsservercore-ltsc2022
+SharedTags: 25-ea-9-jdk-windowsservercore, 25-ea-9-windowsservercore, 25-ea-jdk-windowsservercore, 25-ea-windowsservercore, 25-jdk-windowsservercore, 25-windowsservercore, 25-ea-9-jdk, 25-ea-9, 25-ea-jdk, 25-ea, 25-jdk, 25
+Architectures: windows-amd64
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/windows/windowsservercore-ltsc2022
 Constraints: windowsservercore-ltsc2022
 
-Tags: 21-ea-13-jdk-windowsservercore-1809, 21-ea-13-windowsservercore-1809, 21-ea-jdk-windowsservercore-1809, 21-ea-windowsservercore-1809, 21-jdk-windowsservercore-1809, 21-windowsservercore-1809
-SharedTags: 21-ea-13-jdk-windowsservercore, 21-ea-13-windowsservercore, 21-ea-jdk-windowsservercore, 21-ea-windowsservercore, 21-jdk-windowsservercore, 21-windowsservercore, 21-ea-13-jdk, 21-ea-13, 21-ea-jdk, 21-ea, 21-jdk, 21
+Tags: 25-ea-9-jdk-windowsservercore-1809, 25-ea-9-windowsservercore-1809, 25-ea-jdk-windowsservercore-1809, 25-ea-windowsservercore-1809, 25-jdk-windowsservercore-1809, 25-windowsservercore-1809
+SharedTags: 25-ea-9-jdk-windowsservercore, 25-ea-9-windowsservercore, 25-ea-jdk-windowsservercore, 25-ea-windowsservercore, 25-jdk-windowsservercore, 25-windowsservercore, 25-ea-9-jdk, 25-ea-9, 25-ea-jdk, 25-ea, 25-jdk, 25
 Architectures: windows-amd64
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/windows/windowsservercore-1809
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/windows/windowsservercore-1809
 Constraints: windowsservercore-1809
 
-Tags: 21-ea-13-jdk-nanoserver-1809, 21-ea-13-nanoserver-1809, 21-ea-jdk-nanoserver-1809, 21-ea-nanoserver-1809, 21-jdk-nanoserver-1809, 21-nanoserver-1809
-SharedTags: 21-ea-13-jdk-nanoserver, 21-ea-13-nanoserver, 21-ea-jdk-nanoserver, 21-ea-nanoserver, 21-jdk-nanoserver, 21-nanoserver
+Tags: 25-ea-9-jdk-nanoserver-ltsc2025, 25-ea-9-nanoserver-ltsc2025, 25-ea-jdk-nanoserver-ltsc2025, 25-ea-nanoserver-ltsc2025, 25-jdk-nanoserver-ltsc2025, 25-nanoserver-ltsc2025
+SharedTags: 25-ea-9-jdk-nanoserver, 25-ea-9-nanoserver, 25-ea-jdk-nanoserver, 25-ea-nanoserver, 25-jdk-nanoserver, 25-nanoserver
 Architectures: windows-amd64
-GitCommit: 17df0c31225094e6be01d843a50bd3863eda8870
-Directory: 21/jdk/windows/nanoserver-1809
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/windows/nanoserver-ltsc2025
+Constraints: nanoserver-ltsc2025, windowsservercore-ltsc2025
+
+Tags: 25-ea-9-jdk-nanoserver-ltsc2022, 25-ea-9-nanoserver-ltsc2022, 25-ea-jdk-nanoserver-ltsc2022, 25-ea-nanoserver-ltsc2022, 25-jdk-nanoserver-ltsc2022, 25-nanoserver-ltsc2022
+SharedTags: 25-ea-9-jdk-nanoserver, 25-ea-9-nanoserver, 25-ea-jdk-nanoserver, 25-ea-nanoserver, 25-jdk-nanoserver, 25-nanoserver
+Architectures: windows-amd64
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/windows/nanoserver-ltsc2022
+Constraints: nanoserver-ltsc2022, windowsservercore-ltsc2022
+
+Tags: 25-ea-9-jdk-nanoserver-1809, 25-ea-9-nanoserver-1809, 25-ea-jdk-nanoserver-1809, 25-ea-nanoserver-1809, 25-jdk-nanoserver-1809, 25-nanoserver-1809
+SharedTags: 25-ea-9-jdk-nanoserver, 25-ea-9-nanoserver, 25-ea-jdk-nanoserver, 25-ea-nanoserver, 25-jdk-nanoserver, 25-nanoserver
+Architectures: windows-amd64
+GitCommit: e79fff4246e36766d3f90ad8466cdeb81f57e065
+Directory: 25/jdk/windows/nanoserver-1809
 Constraints: nanoserver-1809, windowsservercore-1809
 
-Tags: 20-rc-jdk-oraclelinux8, 20-rc-oraclelinux8, 20-jdk-oraclelinux8, 20-oraclelinux8, 20-rc-jdk-oracle, 20-rc-oracle, 20-jdk-oracle, 20-oracle
-SharedTags: 20-rc-jdk, 20-rc, 20-jdk, 20
+Tags: 24-rc-jdk-oraclelinux9, 24-rc-oraclelinux9, 24-jdk-oraclelinux9, 24-oraclelinux9, 24-rc-jdk-oracle, 24-rc-oracle, 24-jdk-oracle, 24-oracle
+SharedTags: 24-rc-jdk, 24-rc, 24-jdk, 24
 Architectures: amd64, arm64v8
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/oraclelinux8
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/oraclelinux9
 
-Tags: 20-rc-jdk-oraclelinux7, 20-rc-oraclelinux7, 20-jdk-oraclelinux7, 20-oraclelinux7
+Tags: 24-rc-jdk-oraclelinux8, 24-rc-oraclelinux8, 24-jdk-oraclelinux8, 24-oraclelinux8
 Architectures: amd64, arm64v8
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/oraclelinux7
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/oraclelinux8
 
-Tags: 20-rc-jdk-bullseye, 20-rc-bullseye, 20-jdk-bullseye, 20-bullseye
+Tags: 24-rc-jdk-bookworm, 24-rc-bookworm, 24-jdk-bookworm, 24-bookworm
 Architectures: amd64, arm64v8
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/bullseye
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/bookworm
 
-Tags: 20-rc-jdk-slim-bullseye, 20-rc-slim-bullseye, 20-jdk-slim-bullseye, 20-slim-bullseye, 20-rc-jdk-slim, 20-rc-slim, 20-jdk-slim, 20-slim
+Tags: 24-rc-jdk-slim-bookworm, 24-rc-slim-bookworm, 24-jdk-slim-bookworm, 24-slim-bookworm, 24-rc-jdk-slim, 24-rc-slim, 24-jdk-slim, 24-slim
 Architectures: amd64, arm64v8
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/slim-bullseye
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/slim-bookworm
 
-Tags: 20-rc-jdk-buster, 20-rc-buster, 20-jdk-buster, 20-buster
+Tags: 24-rc-jdk-bullseye, 24-rc-bullseye, 24-jdk-bullseye, 24-bullseye
 Architectures: amd64, arm64v8
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/buster
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/bullseye
 
-Tags: 20-rc-jdk-slim-buster, 20-rc-slim-buster, 20-jdk-slim-buster, 20-slim-buster
+Tags: 24-rc-jdk-slim-bullseye, 24-rc-slim-bullseye, 24-jdk-slim-bullseye, 24-slim-bullseye
 Architectures: amd64, arm64v8
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/slim-buster
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/slim-bullseye
 
-Tags: 20-rc-jdk-windowsservercore-ltsc2022, 20-rc-windowsservercore-ltsc2022, 20-jdk-windowsservercore-ltsc2022, 20-windowsservercore-ltsc2022
-SharedTags: 20-rc-jdk-windowsservercore, 20-rc-windowsservercore, 20-jdk-windowsservercore, 20-windowsservercore, 20-rc-jdk, 20-rc, 20-jdk, 20
+Tags: 24-rc-jdk-windowsservercore-ltsc2025, 24-rc-windowsservercore-ltsc2025, 24-jdk-windowsservercore-ltsc2025, 24-windowsservercore-ltsc2025
+SharedTags: 24-rc-jdk-windowsservercore, 24-rc-windowsservercore, 24-jdk-windowsservercore, 24-windowsservercore, 24-rc-jdk, 24-rc, 24-jdk, 24
 Architectures: windows-amd64
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/windows/windowsservercore-ltsc2022
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/windows/windowsservercore-ltsc2025
+Constraints: windowsservercore-ltsc2025
+
+Tags: 24-rc-jdk-windowsservercore-ltsc2022, 24-rc-windowsservercore-ltsc2022, 24-jdk-windowsservercore-ltsc2022, 24-windowsservercore-ltsc2022
+SharedTags: 24-rc-jdk-windowsservercore, 24-rc-windowsservercore, 24-jdk-windowsservercore, 24-windowsservercore, 24-rc-jdk, 24-rc, 24-jdk, 24
+Architectures: windows-amd64
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/windows/windowsservercore-ltsc2022
 Constraints: windowsservercore-ltsc2022
 
-Tags: 20-rc-jdk-windowsservercore-1809, 20-rc-windowsservercore-1809, 20-jdk-windowsservercore-1809, 20-windowsservercore-1809
-SharedTags: 20-rc-jdk-windowsservercore, 20-rc-windowsservercore, 20-jdk-windowsservercore, 20-windowsservercore, 20-rc-jdk, 20-rc, 20-jdk, 20
+Tags: 24-rc-jdk-windowsservercore-1809, 24-rc-windowsservercore-1809, 24-jdk-windowsservercore-1809, 24-windowsservercore-1809
+SharedTags: 24-rc-jdk-windowsservercore, 24-rc-windowsservercore, 24-jdk-windowsservercore, 24-windowsservercore, 24-rc-jdk, 24-rc, 24-jdk, 24
 Architectures: windows-amd64
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/windows/windowsservercore-1809
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/windows/windowsservercore-1809
 Constraints: windowsservercore-1809
 
-Tags: 20-rc-jdk-nanoserver-1809, 20-rc-nanoserver-1809, 20-jdk-nanoserver-1809, 20-nanoserver-1809
-SharedTags: 20-rc-jdk-nanoserver, 20-rc-nanoserver, 20-jdk-nanoserver, 20-nanoserver
+Tags: 24-rc-jdk-nanoserver-ltsc2025, 24-rc-nanoserver-ltsc2025, 24-jdk-nanoserver-ltsc2025, 24-nanoserver-ltsc2025
+SharedTags: 24-rc-jdk-nanoserver, 24-rc-nanoserver, 24-jdk-nanoserver, 24-nanoserver
 Architectures: windows-amd64
-GitCommit: e8f4b960d194f603f78a9371867cb7c87654b900
-Directory: 20/jdk/windows/nanoserver-1809
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/windows/nanoserver-ltsc2025
+Constraints: nanoserver-ltsc2025, windowsservercore-ltsc2025
+
+Tags: 24-rc-jdk-nanoserver-ltsc2022, 24-rc-nanoserver-ltsc2022, 24-jdk-nanoserver-ltsc2022, 24-nanoserver-ltsc2022
+SharedTags: 24-rc-jdk-nanoserver, 24-rc-nanoserver, 24-jdk-nanoserver, 24-nanoserver
+Architectures: windows-amd64
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/windows/nanoserver-ltsc2022
+Constraints: nanoserver-ltsc2022, windowsservercore-ltsc2022
+
+Tags: 24-rc-jdk-nanoserver-1809, 24-rc-nanoserver-1809, 24-jdk-nanoserver-1809, 24-nanoserver-1809
+SharedTags: 24-rc-jdk-nanoserver, 24-rc-nanoserver, 24-jdk-nanoserver, 24-nanoserver
+Architectures: windows-amd64
+GitCommit: 4b990c22c8b369a103bce738d6838fe3e289a140
+Directory: 24/jdk/windows/nanoserver-1809
 Constraints: nanoserver-1809, windowsservercore-1809

@@ -207,7 +207,6 @@ imageTests+=(
 		postgres-initdb
 	'
 	[python]='
-		python-hy
 		python-imports
 		python-no-pyc
 		python-pip-requests-ssl
@@ -219,10 +218,6 @@ imageTests+=(
 		rabbitmq-tls
 	'
 	[r-base]='
-	'
-	[rapidoid]='
-		rapidoid-hello-world
-		rapidoid-load-balancer
 	'
 	[redis]='
 		redis-basics
@@ -334,6 +329,7 @@ globalExcludeTests+=(
 
 	# https://github.com/docker-library/official-images/pull/8329#issuecomment-656383836
 	[traefik:windowsservercore_override-cmd]=1
+	[traefik:nanoserver_override-cmd]=1
 
 	# TODO adjust MongoDB tests to use docker networks instead of links so they can work on Windows (and consider using PowerShell to generate appropriate certificates for TLS tests instead of openssl)
 	[mongo:nanoserver_mongo-basics]=1

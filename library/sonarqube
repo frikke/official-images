@@ -1,29 +1,48 @@
-Maintainers: Christophe Levis <christophe.levis@sonarsource.com> (@christophelevis),
-             Pierre Guillot <pierre.guillot@sonarsource.com> (@pierre-guillot-gh),
-             Lukasz Jarocki <lukasz.jarocki@sonarsource.com> (@lukasz-jarocki-sonarsource),
-             Aurelien Poscia <aurelien.poscia@sonarsource.com> (@aurelien-poscia-sonarsource),
-             Carmine Vassallo <carmine.vassallo@sonarsource.com> (@carminevassallo),
-             Jeremy Cotineau <jeremy.cotineau@sonarsource.com> (@jCOTINEAU)
+Maintainers: Carmine Vassallo <carmine.vassallo@sonarsource.com> (@carminevassallo),
+             Jeremy Cotineau <jeremy.cotineau@sonarsource.com> (@jCOTINEAU),
+             Davi Koscianski Vidal <davi.koscianski-vidal@sonarsource.com> (@davividal)
 GitRepo: https://github.com/SonarSource/docker-sonarqube.git
 Architectures: amd64, arm64v8
-GitCommit: ed2071a47632c34d7639b6ad1b393ab2aee1c9a8
+GitCommit: 1edbd4a3f756a8b6eba3f039be62fd9c4862e9b9
+Builder: buildkit
 
-Tags: 9.9.0-community, 9.9-community, 9-community, community, lts, lts-community, latest
+Tags: 2025.1.0-developer, 2025.1-developer, 2025-lta-developer, developer
+Architectures: amd64, arm64v8
+Directory: 2025.1/developer
+
+Tags: 2025.1.0-enterprise, 2025.1-enterprise, 2025-lta-enterprise, enterprise
+Architectures: amd64, arm64v8
+Directory: 2025.1/enterprise
+
+Tags: 2025.1.0-datacenter-app, 2025.1-datacenter-app, 2025-lta-datacenter-app, datacenter-app
+Architectures: amd64, arm64v8
+Directory: 2025.1/datacenter/app
+
+Tags: 2025.1.0-datacenter-search, 2025.1-datacenter-search, 2025-lta-datacenter-search, datacenter-search
+Architectures: amd64, arm64v8
+Directory: 2025.1/datacenter/search
+
+Tags: 25.2.0.102705-community, community, latest
+GitCommit: 339bb786d43dfba8bfdda1045e45225142d313bb
+Architectures: amd64, arm64v8
+Directory: community-build
+
+Tags: 9.9.8-community, 9.9-community, 9-community, lts, lts-community
 Architectures: amd64, arm64v8
 Directory: 9/community
 
-Tags: 9.9.0-developer, 9.9-developer, 9-developer, developer, lts-developer
+Tags: 9.9.8-developer, 9.9-developer, 9-developer, lts-developer
 Architectures: amd64, arm64v8
 Directory: 9/developer
 
-Tags: 9.9.0-enterprise, 9.9-enterprise, 9-enterprise, enterprise, lts-enterprise
+Tags: 9.9.8-enterprise, 9.9-enterprise, 9-enterprise, lts-enterprise
 Architectures: amd64, arm64v8
 Directory: 9/enterprise
 
-Tags: 9.9.0-datacenter-app, 9.9-datacenter-app, 9-datacenter-app, datacenter-app, lts-datacenter-app
+Tags: 9.9.8-datacenter-app, 9.9-datacenter-app, 9-datacenter-app, lts-datacenter-app
 Architectures: amd64, arm64v8
 Directory: 9/datacenter/app
 
-Tags: 9.9.0-datacenter-search, 9.9-datacenter-search, 9-datacenter-search, datacenter-search, lts-datacenter-search
+Tags: 9.9.8-datacenter-search, 9.9-datacenter-search, 9-datacenter-search, lts-datacenter-search
 Architectures: amd64, arm64v8
 Directory: 9/datacenter/search
